@@ -1,0 +1,18 @@
+{
+  "key": "core_admin_project-settings",
+  "value": {
+    "menuLogo": {
+      "name": "dreambinar-logo.png",
+      "hash": "dreambinar_logo_e81e7ff943",
+      "url": "/uploads/dreambinar_logo_e81e7ff943.png",
+      "width": 126,
+      "height": 126,
+      "ext": ".png",
+      "size": 1.64,
+      "provider": "local"
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

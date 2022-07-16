@@ -1,0 +1,125 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::feature.feature",
+  "value": {
+    "uid": "api::feature.feature",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "feature",
+      "defaultSortBy": "feature",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "featureImage": {
+        "edit": {
+          "label": "featureImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "featureImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "feature": {
+        "edit": {
+          "label": "feature",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "feature",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "feature",
+        "description",
+        "featureImage"
+      ],
+      "edit": [
+        [
+          {
+            "name": "feature",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          },
+          {
+            "name": "featureImage",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": []
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

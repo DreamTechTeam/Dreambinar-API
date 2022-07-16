@@ -1,0 +1,52 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::developer.developer.find"
+    },
+    {
+      "action": "api::developer.developer.findOne"
+    },
+    {
+      "action": "api::feature.feature.find"
+    },
+    {
+      "action": "api::feature.feature.findOne"
+    },
+    {
+      "action": "api::form-contact.form-contact.create"
+    },
+    {
+      "action": "api::form-contact.form-contact.find"
+    },
+    {
+      "action": "api::form-contact.form-contact.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    }
+  ]
+}
