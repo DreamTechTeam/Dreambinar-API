@@ -837,13 +837,13 @@
       "plugin": "upload",
       "globalId": "UploadFile"
     },
-    "plugin::strapi-newsletter.newsletter": {
+    "plugin::awesome-help.help": {
       "kind": "collectionType",
-      "collectionName": "newsletters",
+      "collectionName": "helps",
       "info": {
-        "singularName": "newsletter",
-        "pluralName": "newsletters",
-        "displayName": "Newsletter"
+        "singularName": "help",
+        "pluralName": "helps",
+        "displayName": "help"
       },
       "options": {
         "draftAndPublish": false,
@@ -858,9 +858,26 @@
         }
       },
       "attributes": {
-        "subject": {
-          "type": "string",
-          "required": true
+        "contentType": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "helpContent": {
+          "type": "string"
+        },
+        "fieldName": {
+          "type": "string"
+        },
+        "containerType": {
+          "type": "string"
+        },
+        "zoneName": {
+          "type": "string"
+        },
+        "componentName": {
+          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
@@ -890,11 +907,11 @@
         }
       },
       "__schema__": {
-        "collectionName": "newsletters",
+        "collectionName": "helps",
         "info": {
-          "singularName": "newsletter",
-          "pluralName": "newsletters",
-          "displayName": "Newsletter"
+          "singularName": "help",
+          "pluralName": "helps",
+          "displayName": "help"
         },
         "options": {
           "draftAndPublish": false,
@@ -909,115 +926,36 @@
           }
         },
         "attributes": {
-          "subject": {
-            "type": "string",
-            "required": true
+          "contentType": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "helpContent": {
+            "type": "string"
+          },
+          "fieldName": {
+            "type": "string"
+          },
+          "containerType": {
+            "type": "string"
+          },
+          "zoneName": {
+            "type": "string"
+          },
+          "componentName": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
       },
       "modelType": "contentType",
-      "modelName": "newsletter",
+      "modelName": "help",
       "connection": "default",
-      "uid": "plugin::strapi-newsletter.newsletter",
-      "plugin": "strapi-newsletter",
-      "globalId": "StrapiNewsletterNewsletter"
-    },
-    "plugin::strapi-newsletter.subscribed-user": {
-      "kind": "collectionType",
-      "collectionName": "subscribed_user",
-      "info": {
-        "singularName": "subscribed-user",
-        "pluralName": "subscribed-users",
-        "displayName": "Subscribed Users"
-      },
-      "options": {
-        "draftAndPublish": false,
-        "comment": ""
-      },
-      "pluginOptions": {
-        "content-manager": {
-          "visible": false
-        },
-        "content-type-builder": {
-          "visible": false
-        }
-      },
-      "attributes": {
-        "email": {
-          "type": "email",
-          "required": true,
-          "unique": true
-        },
-        "provider": {
-          "type": "string",
-          "required": true
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "subscribed_user",
-        "info": {
-          "singularName": "subscribed-user",
-          "pluralName": "subscribed-users",
-          "displayName": "Subscribed Users"
-        },
-        "options": {
-          "draftAndPublish": false,
-          "comment": ""
-        },
-        "pluginOptions": {
-          "content-manager": {
-            "visible": false
-          },
-          "content-type-builder": {
-            "visible": false
-          }
-        },
-        "attributes": {
-          "email": {
-            "type": "email",
-            "required": true,
-            "unique": true
-          },
-          "provider": {
-            "type": "string",
-            "required": true
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "subscribed-user",
-      "connection": "default",
-      "uid": "plugin::strapi-newsletter.subscribed-user",
-      "plugin": "strapi-newsletter",
-      "globalId": "StrapiNewsletterSubscribedUser"
+      "uid": "plugin::awesome-help.help",
+      "plugin": "awesome-help",
+      "globalId": "AwesomeHelpHelp"
     },
     "plugin::i18n.locale": {
       "info": {

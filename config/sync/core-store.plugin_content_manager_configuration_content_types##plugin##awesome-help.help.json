@@ -1,0 +1,201 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::plugin::awesome-help.help",
+  "value": {
+    "uid": "plugin::awesome-help.help",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "contentType",
+      "defaultSortBy": "contentType",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "contentType": {
+        "edit": {
+          "label": "contentType",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "contentType",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "path": {
+        "edit": {
+          "label": "path",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "path",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "helpContent": {
+        "edit": {
+          "label": "helpContent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "helpContent",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fieldName": {
+        "edit": {
+          "label": "fieldName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fieldName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "containerType": {
+        "edit": {
+          "label": "containerType",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "containerType",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "zoneName": {
+        "edit": {
+          "label": "zoneName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "zoneName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "componentName": {
+        "edit": {
+          "label": "componentName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "componentName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "contentType",
+        "path",
+        "helpContent"
+      ],
+      "editRelations": [],
+      "edit": [
+        [
+          {
+            "name": "contentType",
+            "size": 6
+          },
+          {
+            "name": "path",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "helpContent",
+            "size": 6
+          },
+          {
+            "name": "fieldName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "containerType",
+            "size": 6
+          },
+          {
+            "name": "zoneName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "componentName",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
