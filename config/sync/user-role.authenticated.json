@@ -1,8 +1,77 @@
 {
-  "name": "Authenticated",
-  "description": "Default role given to authenticated user.",
+  "name": "Author",
+  "description": "Authors can manage the content they have created.",
   "type": "authenticated",
   "permissions": [
+    {
+      "action": "api::developer.developer.find"
+    },
+    {
+      "action": "api::developer.developer.findOne"
+    },
+    {
+      "action": "api::feature.feature.find"
+    },
+    {
+      "action": "api::feature.feature.findOne"
+    },
+    {
+      "action": "api::form-contact.form-contact.create"
+    },
+    {
+      "action": "api::form-contact.form-contact.find"
+    },
+    {
+      "action": "api::form-contact.form-contact.findOne"
+    },
+    {
+      "action": "api::ormawa.ormawa.find"
+    },
+    {
+      "action": "api::ormawa.ormawa.findOne"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
+    },
+    {
+      "action": "plugin::slugify.slugController.findSlug"
+    },
+    {
+      "action": "plugin::upload.content-api.destroy"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
     {
       "action": "plugin::users-permissions.user.me"
     }

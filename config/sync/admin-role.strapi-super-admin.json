@@ -111,7 +111,8 @@
       "properties": {
         "fields": [
           "email",
-          "message"
+          "message",
+          "fullName"
         ]
       },
       "conditions": []
@@ -128,7 +129,8 @@
       "properties": {
         "fields": [
           "email",
-          "message"
+          "message",
+          "fullName"
         ]
       },
       "conditions": []
@@ -139,7 +141,53 @@
       "properties": {
         "fields": [
           "email",
-          "message"
+          "message",
+          "fullName"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::ormawa.ormawa",
+      "properties": {
+        "fields": [
+          "name",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::ormawa.ormawa",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::ormawa.ormawa",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::ormawa.ormawa",
+      "properties": {
+        "fields": [
+          "name",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::ormawa.ormawa",
+      "properties": {
+        "fields": [
+          "name",
+          "image"
         ]
       },
       "conditions": []

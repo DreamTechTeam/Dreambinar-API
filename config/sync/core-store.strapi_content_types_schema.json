@@ -1727,6 +1727,10 @@
           "type": "text",
           "required": true
         },
+        "fullName": {
+          "type": "string",
+          "required": true
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -1774,6 +1778,10 @@
           "message": {
             "type": "text",
             "required": true
+          },
+          "fullName": {
+            "type": "string",
+            "required": true
           }
         },
         "kind": "collectionType"
@@ -1784,6 +1792,104 @@
       "uid": "api::form-contact.form-contact",
       "apiName": "form-contact",
       "globalId": "FormContact",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::ormawa.ormawa": {
+      "kind": "collectionType",
+      "collectionName": "ormawas",
+      "info": {
+        "singularName": "ormawa",
+        "pluralName": "ormawas",
+        "displayName": "Ormawa"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "image": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "ormawas",
+        "info": {
+          "singularName": "ormawa",
+          "pluralName": "ormawas",
+          "displayName": "Ormawa"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "name": {
+            "type": "string",
+            "required": true
+          },
+          "image": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "ormawa",
+      "connection": "default",
+      "uid": "api::ormawa.ormawa",
+      "apiName": "ormawa",
+      "globalId": "Ormawa",
       "actions": {},
       "lifecycles": {}
     }

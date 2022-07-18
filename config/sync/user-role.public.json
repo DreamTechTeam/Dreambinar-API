@@ -25,6 +25,18 @@
       "action": "api::form-contact.form-contact.findOne"
     },
     {
+      "action": "api::ormawa.ormawa.find"
+    },
+    {
+      "action": "api::ormawa.ormawa.findOne"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
+    },
+    {
+      "action": "plugin::slugify.slugController.findSlug"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {

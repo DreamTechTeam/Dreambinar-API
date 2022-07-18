@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::form-contact.form-contact",
+  "key": "plugin_content_manager_configuration_content_types::api::ormawa.ormawa",
   "value": {
-    "uid": "api::form-contact.form-contact",
+    "uid": "api::ormawa.ormawa",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
-      "defaultSortBy": "id",
+      "mainField": "name",
+      "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,46 +20,32 @@
           "sortable": true
         }
       },
-      "email": {
+      "name": {
         "edit": {
-          "label": "email",
+          "label": "name",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "email",
+          "label": "name",
           "searchable": true,
           "sortable": true
         }
       },
-      "message": {
+      "image": {
         "edit": {
-          "label": "message",
+          "label": "image",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "message",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "fullName": {
-        "edit": {
-          "label": "fullName",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "fullName",
-          "searchable": true,
-          "sortable": true
+          "label": "image",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -92,30 +78,24 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "image",
+        "createdAt"
+      ],
+      "editRelations": [],
       "edit": [
         [
           {
-            "name": "fullName",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "email",
+            "name": "name",
             "size": 6
           },
           {
-            "name": "message",
+            "name": "image",
             "size": 6
           }
         ]
-      ],
-      "editRelations": [],
-      "list": [
-        "id",
-        "email",
-        "message",
-        "createdAt"
       ]
     }
   },
