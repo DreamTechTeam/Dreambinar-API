@@ -34,4 +34,11 @@ module.exports = [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
+  {
+    name: "strapi::compression",
+    config: {
+      br: false,
+      gzip: true,
+    },
+  },
 ];
