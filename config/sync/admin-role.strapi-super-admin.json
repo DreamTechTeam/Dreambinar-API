@@ -5,6 +5,51 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "events"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "events"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "events"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::developer.developer",
       "properties": {
         "fields": [
@@ -53,6 +98,90 @@
           "email",
           "profileImg",
           "socialMedia"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::event.event",
+      "properties": {
+        "fields": [
+          "user_id",
+          "category",
+          "isApprove",
+          "isDraft",
+          "title",
+          "slug",
+          "description",
+          "isOnline",
+          "isPaid",
+          "price",
+          "deadline",
+          "location",
+          "url",
+          "priceType",
+          "eventImages"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::event.event",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::event.event",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::event.event",
+      "properties": {
+        "fields": [
+          "user_id",
+          "category",
+          "isApprove",
+          "isDraft",
+          "title",
+          "slug",
+          "description",
+          "isOnline",
+          "isPaid",
+          "price",
+          "deadline",
+          "location",
+          "url",
+          "priceType",
+          "eventImages"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::event.event",
+      "properties": {
+        "fields": [
+          "user_id",
+          "category",
+          "isApprove",
+          "isDraft",
+          "title",
+          "slug",
+          "description",
+          "isOnline",
+          "isPaid",
+          "price",
+          "deadline",
+          "location",
+          "url",
+          "priceType",
+          "eventImages"
         ]
       },
       "conditions": []
@@ -355,7 +484,8 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "events"
         ]
       },
       "conditions": []
@@ -379,7 +509,8 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "events"
         ]
       },
       "conditions": []
@@ -397,7 +528,8 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "events"
         ]
       },
       "conditions": []

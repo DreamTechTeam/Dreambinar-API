@@ -4,10 +4,34 @@
   "type": "authenticated",
   "permissions": [
     {
+      "action": "api::category.category.create"
+    },
+    {
+      "action": "api::category.category.find"
+    },
+    {
+      "action": "api::category.category.findOne"
+    },
+    {
       "action": "api::developer.developer.find"
     },
     {
       "action": "api::developer.developer.findOne"
+    },
+    {
+      "action": "api::event.event.create"
+    },
+    {
+      "action": "api::event.event.delete"
+    },
+    {
+      "action": "api::event.event.find"
+    },
+    {
+      "action": "api::event.event.findOne"
+    },
+    {
+      "action": "api::event.event.update"
     },
     {
       "action": "api::feature.feature.find"
