@@ -162,20 +162,6 @@
           "sortable": true
         }
       },
-      "deadline": {
-        "edit": {
-          "label": "deadline",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "deadline",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "location": {
         "edit": {
           "label": "location",
@@ -230,6 +216,62 @@
           "label": "eventImages",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "dateStart": {
+        "edit": {
+          "label": "dateStart",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dateStart",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "dateEnd": {
+        "edit": {
+          "label": "dateEnd",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dateEnd",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "timeStart": {
+        "edit": {
+          "label": "timeStart",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "timeStart",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "timeEnd": {
+        "edit": {
+          "label": "timeEnd",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "timeEnd",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -311,10 +353,6 @@
         ],
         [
           {
-            "name": "deadline",
-            "size": 4
-          },
-          {
             "name": "location",
             "size": 6
           }
@@ -333,6 +371,24 @@
           {
             "name": "eventImages",
             "size": 6
+          },
+          {
+            "name": "dateStart",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "dateEnd",
+            "size": 4
+          },
+          {
+            "name": "timeStart",
+            "size": 4
+          },
+          {
+            "name": "timeEnd",
+            "size": 4
           }
         ]
       ],

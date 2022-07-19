@@ -1756,10 +1756,6 @@
           "type": "biginteger",
           "required": false
         },
-        "deadline": {
-          "type": "date",
-          "required": false
-        },
         "location": {
           "type": "string",
           "default": "daring"
@@ -1776,11 +1772,27 @@
           ]
         },
         "eventImages": {
-          "allowedTypes": [
-            "images"
-          ],
           "type": "media",
           "multiple": false,
+          "required": true,
+          "allowedTypes": [
+            "images"
+          ]
+        },
+        "dateStart": {
+          "type": "date",
+          "required": true
+        },
+        "dateEnd": {
+          "type": "date",
+          "required": true
+        },
+        "timeStart": {
+          "type": "time",
+          "required": true
+        },
+        "timeEnd": {
+          "type": "time",
           "required": true
         },
         "createdAt": {
@@ -1875,10 +1887,6 @@
             "type": "biginteger",
             "required": false
           },
-          "deadline": {
-            "type": "date",
-            "required": false
-          },
           "location": {
             "type": "string",
             "default": "daring"
@@ -1895,11 +1903,27 @@
             ]
           },
           "eventImages": {
-            "allowedTypes": [
-              "images"
-            ],
             "type": "media",
             "multiple": false,
+            "required": true,
+            "allowedTypes": [
+              "images"
+            ]
+          },
+          "dateStart": {
+            "type": "date",
+            "required": true
+          },
+          "dateEnd": {
+            "type": "date",
+            "required": true
+          },
+          "timeStart": {
+            "type": "time",
+            "required": true
+          },
+          "timeEnd": {
+            "type": "time",
             "required": true
           }
         },

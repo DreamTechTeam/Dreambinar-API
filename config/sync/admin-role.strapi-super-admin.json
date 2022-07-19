@@ -117,11 +117,14 @@
           "isOnline",
           "isPaid",
           "price",
-          "deadline",
           "location",
           "url",
           "priceType",
-          "eventImages"
+          "eventImages",
+          "dateStart",
+          "dateEnd",
+          "timeStart",
+          "timeEnd"
         ]
       },
       "conditions": []
@@ -153,11 +156,14 @@
           "isOnline",
           "isPaid",
           "price",
-          "deadline",
           "location",
           "url",
           "priceType",
-          "eventImages"
+          "eventImages",
+          "dateStart",
+          "dateEnd",
+          "timeStart",
+          "timeEnd"
         ]
       },
       "conditions": []
@@ -177,11 +183,14 @@
           "isOnline",
           "isPaid",
           "price",
-          "deadline",
           "location",
           "url",
           "priceType",
-          "eventImages"
+          "eventImages",
+          "dateStart",
+          "dateEnd",
+          "timeStart",
+          "timeEnd"
         ]
       },
       "conditions": []
