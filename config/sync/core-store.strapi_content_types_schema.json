@@ -1374,6 +1374,10 @@
           "default": false,
           "required": true
         },
+        "fullName": {
+          "type": "string",
+          "default": "User Fullname"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -1501,6 +1505,10 @@
             "type": "boolean",
             "default": false,
             "required": true
+          },
+          "fullName": {
+            "type": "string",
+            "default": "User Fullname"
           }
         },
         "kind": "collectionType"
@@ -1790,7 +1798,7 @@
         },
         "location": {
           "type": "string",
-          "default": "daring"
+          "default": "Event Online"
         },
         "url": {
           "type": "string",
@@ -1826,6 +1834,13 @@
         "timeEnd": {
           "type": "time",
           "required": true
+        },
+        "type": {
+          "type": "enumeration",
+          "enum": [
+            "Person",
+            "Team"
+          ]
         },
         "createdAt": {
           "type": "datetime"
@@ -1921,7 +1936,7 @@
           },
           "location": {
             "type": "string",
-            "default": "daring"
+            "default": "Event Online"
           },
           "url": {
             "type": "string",
@@ -1957,6 +1972,13 @@
           "timeEnd": {
             "type": "time",
             "required": true
+          },
+          "type": {
+            "type": "enumeration",
+            "enum": [
+              "Person",
+              "Team"
+            ]
           }
         },
         "kind": "collectionType"

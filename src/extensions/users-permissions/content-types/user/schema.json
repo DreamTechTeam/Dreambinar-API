@@ -84,6 +84,10 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "fullName": {
+      "type": "string",
+      "default": "User Fullname"
     }
   }
 }

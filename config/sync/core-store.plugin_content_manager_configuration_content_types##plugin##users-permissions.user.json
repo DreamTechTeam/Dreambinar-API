@@ -204,6 +204,20 @@
           "sortable": true
         }
       },
+      "fullName": {
+        "edit": {
+          "label": "fullName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fullName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -279,6 +293,12 @@
           {
             "name": "verified",
             "size": 4
+          }
+        ],
+        [
+          {
+            "name": "fullName",
+            "size": 6
           }
         ]
       ],

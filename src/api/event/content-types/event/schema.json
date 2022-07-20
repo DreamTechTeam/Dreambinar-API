@@ -60,7 +60,7 @@
     },
     "location": {
       "type": "string",
-      "default": "daring"
+      "default": "Event Online"
     },
     "url": {
       "type": "string",
@@ -96,6 +96,13 @@
     "timeEnd": {
       "type": "time",
       "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Person",
+        "Team"
+      ]
     }
   }
 }

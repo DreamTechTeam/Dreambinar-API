@@ -124,7 +124,8 @@
           "dateStart",
           "dateEnd",
           "timeStart",
-          "timeEnd"
+          "timeEnd",
+          "type"
         ]
       },
       "conditions": []
@@ -163,7 +164,8 @@
           "dateStart",
           "dateEnd",
           "timeStart",
-          "timeEnd"
+          "timeEnd",
+          "type"
         ]
       },
       "conditions": []
@@ -190,7 +192,8 @@
           "dateStart",
           "dateEnd",
           "timeStart",
-          "timeEnd"
+          "timeEnd",
+          "type"
         ]
       },
       "conditions": []
@@ -497,7 +500,8 @@
           "events",
           "profileImg",
           "bio",
-          "verified"
+          "verified",
+          "fullName"
         ]
       },
       "conditions": []
@@ -525,7 +529,8 @@
           "events",
           "profileImg",
           "bio",
-          "verified"
+          "verified",
+          "fullName"
         ]
       },
       "conditions": []
@@ -547,7 +552,8 @@
           "events",
           "profileImg",
           "bio",
-          "verified"
+          "verified",
+          "fullName"
         ]
       },
       "conditions": []
