@@ -162,6 +162,48 @@
           "sortable": false
         }
       },
+      "profileImg": {
+        "edit": {
+          "label": "profileImg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "profileImg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "bio": {
+        "edit": {
+          "label": "bio",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bio",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "verified": {
+        "edit": {
+          "label": "verified",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "verified",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -222,6 +264,20 @@
         [
           {
             "name": "blocked",
+            "size": 4
+          },
+          {
+            "name": "profileImg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bio",
+            "size": 6
+          },
+          {
+            "name": "verified",
             "size": 4
           }
         ]

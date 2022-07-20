@@ -68,6 +68,22 @@
       "relation": "oneToMany",
       "target": "api::event.event",
       "mappedBy": "user_id"
+    },
+    "profileImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bio": {
+      "type": "text"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

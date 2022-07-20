@@ -1,6 +1,6 @@
 {
-  "name": "Author",
-  "description": "Authors can manage the content they have created.",
+  "name": "Ormawa",
+  "description": "Ormawa can manage the content they have created.",
   "type": "authenticated",
   "permissions": [
     {

@@ -494,7 +494,10 @@
           "confirmed",
           "blocked",
           "role",
-          "events"
+          "events",
+          "profileImg",
+          "bio",
+          "verified"
         ]
       },
       "conditions": []
@@ -519,7 +522,10 @@
           "confirmed",
           "blocked",
           "role",
-          "events"
+          "events",
+          "profileImg",
+          "bio",
+          "verified"
         ]
       },
       "conditions": []
@@ -538,7 +544,10 @@
           "confirmed",
           "blocked",
           "role",
-          "events"
+          "events",
+          "profileImg",
+          "bio",
+          "verified"
         ]
       },
       "conditions": []
