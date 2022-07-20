@@ -78,7 +78,8 @@
       ]
     },
     "bio": {
-      "type": "text"
+      "type": "text",
+      "default": "Description of your ormawa"
     },
     "verified": {
       "type": "boolean",
