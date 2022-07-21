@@ -96,13 +96,6 @@
     "timeEnd": {
       "type": "time",
       "required": true
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "Person",
-        "Team"
-      ]
     }
   }
 }
