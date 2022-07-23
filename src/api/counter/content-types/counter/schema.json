@@ -12,19 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
     "events": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::event.event"
+      "target": "api::event.event",
+      "mappedBy": "counter"
     },
     "users_permissions_users": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "plugin::users-permissions.user"
-    },
-    "title": {
-      "type": "string",
-      "required": true
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "counter"
     }
   }
 }

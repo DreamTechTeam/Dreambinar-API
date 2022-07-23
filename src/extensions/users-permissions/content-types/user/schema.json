@@ -89,6 +89,12 @@
     "fullName": {
       "type": "string",
       "default": "User Fullname"
+    },
+    "counter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::counter.counter",
+      "inversedBy": "users_permissions_users"
     }
   }
 }
