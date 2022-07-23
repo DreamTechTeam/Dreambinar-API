@@ -93,12 +93,6 @@
     "timeEnd": {
       "type": "time",
       "required": true
-    },
-    "counter": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::counter.counter",
-      "inversedBy": "events"
     }
   }
 }
