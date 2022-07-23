@@ -50,6 +50,48 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::counter.counter",
+      "properties": {
+        "fields": [
+          "events",
+          "users_permissions_users",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::counter.counter",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::counter.counter",
+      "properties": {
+        "fields": [
+          "events",
+          "users_permissions_users",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::counter.counter",
+      "properties": {
+        "fields": [
+          "events",
+          "users_permissions_users",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::developer.developer",
       "properties": {
         "fields": [
@@ -112,7 +154,6 @@
           "isApprove",
           "isDraft",
           "title",
-          "slug",
           "description",
           "isOnline",
           "isPaid",
@@ -124,8 +165,7 @@
           "dateStart",
           "dateEnd",
           "timeStart",
-          "timeEnd",
-          "type"
+          "timeEnd"
         ]
       },
       "conditions": []
@@ -152,7 +192,6 @@
           "isApprove",
           "isDraft",
           "title",
-          "slug",
           "description",
           "isOnline",
           "isPaid",
@@ -164,8 +203,7 @@
           "dateStart",
           "dateEnd",
           "timeStart",
-          "timeEnd",
-          "type"
+          "timeEnd"
         ]
       },
       "conditions": []
@@ -180,7 +218,6 @@
           "isApprove",
           "isDraft",
           "title",
-          "slug",
           "description",
           "isOnline",
           "isPaid",
@@ -192,8 +229,7 @@
           "dateStart",
           "dateEnd",
           "timeStart",
-          "timeEnd",
-          "type"
+          "timeEnd"
         ]
       },
       "conditions": []

@@ -1610,6 +1610,100 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::counter.counter": {
+      "kind": "collectionType",
+      "collectionName": "counters",
+      "info": {
+        "singularName": "counter",
+        "pluralName": "counters",
+        "displayName": "Counter",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": false
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "events": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::event.event"
+        },
+        "users_permissions_users": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "plugin::users-permissions.user"
+        },
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "counters",
+        "info": {
+          "singularName": "counter",
+          "pluralName": "counters",
+          "displayName": "Counter",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": false
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "events": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::event.event"
+          },
+          "users_permissions_users": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "plugin::users-permissions.user"
+          },
+          "title": {
+            "type": "string",
+            "required": true
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "counter",
+      "connection": "default",
+      "uid": "api::counter.counter",
+      "apiName": "counter",
+      "globalId": "Counter",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::developer.developer": {
       "kind": "collectionType",
       "collectionName": "developers",
@@ -1778,10 +1872,6 @@
           "required": true,
           "maxLength": 50
         },
-        "slug": {
-          "type": "uid",
-          "targetField": "title"
-        },
         "description": {
           "type": "richtext",
           "required": true
@@ -1796,7 +1886,8 @@
         },
         "price": {
           "type": "biginteger",
-          "required": false
+          "required": false,
+          "default": "0"
         },
         "location": {
           "type": "string",
@@ -1836,13 +1927,6 @@
         "timeEnd": {
           "type": "time",
           "required": true
-        },
-        "type": {
-          "type": "enumeration",
-          "enum": [
-            "Person",
-            "Team"
-          ]
         },
         "createdAt": {
           "type": "datetime"
@@ -1916,10 +2000,6 @@
             "required": true,
             "maxLength": 50
           },
-          "slug": {
-            "type": "uid",
-            "targetField": "title"
-          },
           "description": {
             "type": "richtext",
             "required": true
@@ -1934,7 +2014,8 @@
           },
           "price": {
             "type": "biginteger",
-            "required": false
+            "required": false,
+            "default": "0"
           },
           "location": {
             "type": "string",
@@ -1974,13 +2055,6 @@
           "timeEnd": {
             "type": "time",
             "required": true
-          },
-          "type": {
-            "type": "enumeration",
-            "enum": [
-              "Person",
-              "Team"
-            ]
           }
         },
         "kind": "collectionType"
